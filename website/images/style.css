@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: deepskyblue;
+}
+
+header {
+    font-family: playball, serif;
+    font-size: 100px;
+    text-align: center;
+    color: rgba(205, 201, 200,0.5);
+    z-index: 44;
+}
+
+.logo {
+    position: fixed;
+    width: 251px;
+    height: 93px;
+    left: 50px;
+    z-index: 100;
+    margin-left: 25px;
+
+}
+
+/* side bar boxes */
+.menubox {
+    position: fixed;
+    width: 251px;
+    height: 93px;
+    left: 27px;
+    top: 150px;
+    z-index: 10;
+    background: #1daab3;
+}
+
+.contactbox {
+    position: fixed;
+    width: 251px;
+    height: 93px;
+    left: 27px;
+    top: 250px;
+    z-index: 10;
+    background: #1daab3;
+}
+
+.merchandisebox {
+    position: fixed;
+    width: 251px;
+    height: 93px;
+    left: 27px;
+    top: 350px;
+    z-index: 10;
+    background: #1daab3;
+}
+
+.historybox {
+    position: fixed;
+    width: 251px;
+    height: 93px;
+    left: 27px;
+    top: 450px;
+    z-index: 10;
+    background: #1daab3;
+}
+
+.socialbox {
+    position: fixed;
+    width: 251px;
+    height: 93px;
+    left: 27px;
+    top: 550px;
+    z-index: 10;
+    background: #1daab3;
+}
+
+/*text format side bar*/
+.text-boxes {
+    float: right;
+    top: 225px;
+    z-index: 10;
+    padding-top: 25px;
+    padding-right: 9px;
+    font-family: playball, serif;
+    font-size: 70px;
+    text-align: right;
+    color: whitesmoke;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+nav {
+    width: 1180px;
+    height: 100px;
+    background-color: cornflowerblue;
+    color: darkgrey;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#section_01, #section_03, #section_05 {
+    width: 1180px;
+    height: 800px;
+    color: darkgrey;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, darkgray,whitesmoke);
+}
+
+#section_01 .container {
+    position: relative;
+    text-align: center;
+    font-family: playball, serif;
+    font-size: 115px;
+    color: #1daab3;
+    white-space: nowrap;
+
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(29,170,179, 0.5);
+}
+#section_02, #section_04, #section_06 {
+    width: 1180px;
+    height: 800px;
+    background-image: linear-gradient(darkgray,whitesmoke);
+    color: darkgrey;
+    margin: 0 auto;
+}
+
+.contact_boxes {
+    width: 250px;
+    height: 500px;
+    background: #1daab3;
+
+}
+.contact-text {
+    font-family: Podkova VF Beta, serif;
+    color: whitesmoke;
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: left;
+    padding-top: 20px;
+    line-height: 40px;
+
+}
+.contact-text2 {
+    font-family: Podkova VF Beta, serif;
+    color: whitesmoke;
+    font-size: 10px;
+    margin-left: 10px;
+    text-align: left;
+    padding-top: 20px;
+    line-height: 25px;
+
+}
+.leftside {
+    width: 30%;
+    height: 100%;
+    float: left;
+
+}
+
+.rightside {
+    width: 70%;
+    height: 100%;
+    float: left
+
+}
+
+.square {
+    position: relative;
+    margin: 25px;
+    display: inline-block;
+    text-align: right;
+}
+.square2 {
+    float: left;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    text-align: right;
+}
+.hours {
+    width: 700px;
+    height: 100px;
+    background: #1daab3;
+    margin: 15px;
+    display: inline-block;
+
+}
+.hours2 {
+    width: 700px;
+    height: 300px;
+    background: #1daab3;
+    display: inline-block;
+    margin: 15px;
+
+}
+.hours_text {
+    font-family: Podkova VF Beta, serif;
+    color: whitesmoke;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 45px;
+
+}
+.text {
+    font-family: playball, serif;
+    color: #1daab3;
+    font-size: 50px;
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0;
+    right: 0;
+
+}
+.hheader {
+    font-family: playball, serif;
+    font-size: 55px;
+    z-index: 20;
+    color: #1daab3;
+    margin-left: 550px;
+    margin-top: -75px;
+}
+
+.mheader {
+    font-family: playball, serif;
+    font-size: 55px;
+    z-index: 20;
+    color: #1daab3;
+    float: right;
+    right: 40px;
+    margin-top: -2px;
+    margin-right: 80px;
+}
+.cheader {
+    font-family: playball, serif;
+    font-size: 55px;
+    z-index: 20;
+    color: #1daab3;
+    margin-left: 550px;
+    margin-top: 5px;
+
+}
+
+.menu-squares {
+    float: left;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.merch-squares {
+    float: left;
+    margin-right: 25px;
+    margin-top: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #1daab3;
+    background-color: #FFFFFF;
+}
+
+.merch-text {
+    font-family: Podkova VF Beta, serif;
+    color: whitesmoke;
+    font-size: 25px;
+    margin-top: 10px;
+    background-color: #1daab3;
+    bottom: 0;
+    right: 0;
+
+}
+.space {
+    margin: 50px;
+}
+
+a:link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:visited {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+}
+
+p {
+    padding-top: 25px;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+
+footer {
+    position: absolute;
+    bottom: 25px;
+
+}
+

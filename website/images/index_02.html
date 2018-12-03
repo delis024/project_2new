@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Al's Breakfast</title>
+<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="shortcut icon" href="newfavicon.ico" >
+<!--<link rel="icon" href="/favicon.ico" type="image/x-icon">-->
+
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow: hidden;
+        background-color: whitesmoke;
+    }
+
+
+    header {
+        /*position: absolute;*/
+        /*left: 765px;*/
+        top: 73px;
+        font-family: playball, serif;
+        font-size: 50px;
+        text-align: center;
+        color: #610300;
+
+    }
+
+    .logo {
+        position: fixed;
+        width: 251px;
+        height: 93px;
+        left: 50px;
+        z-index: 100;
+        margin-left: 25px;
+
+    }
+
+    /* side bar boxes */
+    .menubox {
+        position: fixed;
+        width: 251px;
+        height: 93px;
+        left: 27px;
+        top: 150px;
+        z-index: 10;
+        background: #610300;
+    }
+
+    .contactbox {
+        position: fixed;
+        width: 251px;
+        height: 93px;
+        left: 27px;
+        top: 250px;
+        z-index: 10;
+        background: #610300;
+    }
+
+    .merchandisebox {
+        position: fixed;
+        width: 251px;
+        height: 93px;
+        left: 27px;
+        top: 350px;
+        z-index: 10;
+        background: #610300;
+    }
+
+    .historybox {
+        position: fixed;
+        width: 251px;
+        height: 93px;
+        left: 27px;
+        top: 450px;
+        z-index: 10;
+        background: #610300;
+    }
+
+    .socialbox {
+        position: fixed;
+        width: 251px;
+        height: 93px;
+        left: 27px;
+        top: 550px;
+        z-index: 10;
+        background: #610300;
+    }
+
+    /*text format side bar*/
+    .text-boxes {
+        float: right;
+        top: 225px;
+        z-index: 10;
+        padding-top: 35px;
+        padding-right: 9px;
+        font-family: playball, serif;
+        font-size: 50px;
+        text-align: right;
+        color: whitesmoke;
+    }
+
+
+    nav {
+        width: 1180px;
+        height: 100px;
+        background-color: cornflowerblue;
+        color: darkgrey;
+        margin: 0 auto;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    #section_01, #section_03, #section_05 {
+        width: 1180px;
+        height: 800px;
+        color: darkgrey;
+        margin: 0 auto;
+        background-image: linear-gradient(to top, darkgray,whitesmoke);
+    }
+
+    #section_01 {
+        background-image: url("../../bootstrap/als.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scaleX(-1);
+    }
+
+    #section_02, #section_04, #section_06 {
+        width: 1180px;
+        height: 800px;
+        background-image: linear-gradient(darkgray,whitesmoke);
+        color: darkgrey;
+        margin: 0 auto;
+    }
+
+    .contact_boxes {
+        width: 250px;
+        height: 500px;
+        background: #610300;
+
+    }
+    .contact-text {
+         font-family: Podkova VF Beta, serif;
+         color: whitesmoke;
+         font-size: 15px;
+         margin-left: 10px;
+         text-align: left;
+         padding-top: 20px;
+         line-height: 40px;
+
+     }
+    .contact-text2 {
+        font-family: Podkova VF Beta, serif;
+        color: whitesmoke;
+        font-size: 10px;
+        margin-left: 10px;
+        text-align: left;
+        padding-top: 20px;
+        line-height: 25px;
+
+    }
+    .leftside {
+        width: 30%;
+        height: 100%;
+        float: left;
+
+    }
+
+    .rightside {
+        width: 70%;
+        height: 100%;
+        float: left
+
+    }
+
+    .square {
+        position: relative;
+        margin: 25px;
+        display: inline-block;
+        text-align: right;
+    }
+    .square2 {
+        float: left;
+        margin: 10px;
+        position: relative;
+        display: inline-block;
+        text-align: right;
+    }
+    .text {
+        font-family: playball, serif;
+        color: #610300;
+        font-size: 50px;
+        position: absolute;
+        margin-top: 10px;
+        bottom: 0;
+        right: 0;
+
+    }
+
+    .mheader {
+        font-family: playball, serif;
+        font-size: 55px;
+        z-index: 20;
+        color: #610300;
+        float: right;
+        right: 40px;
+        margin-top: -2px;
+        margin-right: 80px;
+    }
+    .cheader {
+        font-family: playball, serif;
+        font-size: 25px;
+        z-index: 20;
+        color: #610300;
+        margin-left: 550px;
+        margin-top: 5px;
+
+
+    }
+
+    .menu-squares {
+        float: left;
+        margin-right: 25px;
+        margin-top: 25px;
+    }
+
+    .merch-squares {
+        float: left;
+        margin-right: 25px;
+        margin-top: 2px;
+        border-radius: 4px;
+        border-style: solid;
+        border-color: #610300;
+        background-color: #FFFFFF;
+    }
+
+    .merch-text {
+        font-family: Podkova VF Beta, serif;
+        color: whitesmoke;
+        font-size: 25px;
+        margin-top: 10px;
+        background-color: #610300;
+        bottom: 0;
+        right: 0;
+
+    }
+
+    a:link {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: gray;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    p {
+        padding-top: 25px;
+        padding-left: 10px;
+        font-family: sans-serif;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 25px;
+
+    }
+
+
+</style>
+
+<div>
+
+    <div id="section_01"><p></p></div>
+    <a href="#section_01">
+        <div class="logo"><img src="new-als.png" style="width: 150px; height: 150px;background-color:
+    rgba(249, 249, 249, .5); border-radius: 50%; padding-right: 4px; padding-top: -2px;"></div>
+    </a>
+    <a href="#section_02">
+        <div class="menubox">
+            <div class="text-boxes">menu</div>
+        </div>
+    </a>
+    <a href="#section_03">
+        <div class="contactbox">
+            <div class="text-boxes">contact</div>
+        </div>
+    </a>
+    <a href="#section_04">
+        <div class="merchandisebox">
+            <div class="text-boxes">merchandise</div>
+        </div>
+    </a>
+    <a href="#section_05">
+        <div class="historybox">
+            <div class="text-boxes">history</div>
+        </div>
+    </a>
+    <a href="#section_06">
+        <div class="socialbox">
+            <div class="text-boxes">social</div>
+        </div>
+    </a>
+
+    <div id="section_02">
+        <div class="leftside"></div>
+        <div class="rightside">
+
+            <div class="menu-squares square">
+                <img src="eggs_benedict.jpg" style="width: 300px;height: 259px; opacity: 0.5;"/>
+                <div class="text">egg dishes</div>
+            </div>
+            <div class="menu-squares square">
+                <img src="superpancake.jpg" style="width: 300px;height: 259px;opacity: 0.5; "/>
+                <div class="text">pancakes</div>
+            </div>
+            <div class="menu-squares square">
+                <img src="french_toast.jpg" style="width: 300px;height: 259px; opacity: 0.5;"/>
+                <div class="text">french toast</div>
+            </div>
+            <div class="menu-squares square">
+                <img src="omelette.jpg" style="width: 300px;height: 259px;opacity: 0.5; "/>
+                <div class="text">omelets</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section_03">
+        <div class="leftside"></div>
+        <div class="rightside">
+        <div class="cheader"><h1>Contact Us!</h1></div>
+
+            <div class="contact_boxes square2">
+                <div class="contact-text">email: alison@alsbreakfastmpls.com <br>
+                phone: (612)-331-9991
+                 <br>   We’d Love to Hear from You!</div>
+        </div>
+            <div class="contact_boxes square2">
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1
+                    d2822.1600714574465!2d-93.23783948476871!3d44.98105927909817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                    1!3m3!1m2!1s0x52b32d119299f9f3%3A0x23e66e1e446f5b88!2sAl&#39;s+Breakfast!5e0!3m2!1sen!2sus!4v1542037442230"
+                             width="250" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>"
+                </div>
+            </div>
+        <div class="contact_boxes square2">
+            <div class="contact-text2">These are only some of the reasons you may want to contact us:<br>
+                1. Saying thanks for a great meal.<br>
+                2. Inquiring about private parties in the afternoons or on Sunday mornings.<br>
+                You could be the most popular kid on the block when you and 13 of your friends reserve a private Al's breakfast. Email for details about pricing.<br>
+                3. Recommending improvements to our service. (We reserve the right to ignore any recommendation.)<br>
+                4. Asking about the wait time. (Our assessments of the wait time are notoriously bad and will not perform much better than random chance.)<br>
+                5. Applying for a job...when you have no better options. This is best done in person.<br>
+                6. Suggesting haiku for the Al's Breakfast private poetry collection.</div>
+        </div>
+    </div>
+    </div>
+
+    <div id="section_04">
+        <p class="mheader">Merchandise</p>
+        <div class="leftside"></div>
+        <div class="rightside">
+
+            <div class="merch-squares square">
+                <img src="blue%20tee.png" style="width: 200px;height: 200px; opacity: 0.5;"/>
+                <div class="merch-text">youth apparel</div>
+            </div>
+
+            <div class="merch-squares square">
+                <img src="tee.png" style="width: 200px;height: 200px;opacity: 0.5; "/>
+                <div class="merch-text">adult apparel</div>
+            </div>
+
+            <div class="merch-squares square">
+                <img src="coffebagbrown.png" style="object-fit: cover; width: 200px;height: 200px; opacity: 0.5;"/>
+                <div class="merch-text">coffee</div>
+            </div>
+
+            <div class="merch-squares square">
+                <img src="als%20logo.jpg" style="object-fit: cover; width: 200px;height: 200px; opacity: 0.5;"/>
+                <div class="merch-text">temp tattoos</div>
+            </div>
+
+            <div class="merch-squares square">
+                <img src="MUG.png" style="object-fit: cover; width: 200px;height: 200px;opacity: 0.5; "/>
+                <div class="merch-text">mugs</div>
+            </div>
+
+            <div class="merch-squares square">
+                <img src="blue%20cap-709bbu.jpg" style="width: 200px;height: 200px; opacity: 0.5;"/>
+                <div class="merch-text">accessories</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="section_05"><p>history</p>
+    <p class="mheader">Merchandise</p>
+    <div class="leftside"></div>
+    <div class="rightside">
+
+        <div class="merch-squares square">
+            <img src="blue%20tee.png" style="width: 200px;height: 200px; opacity: 0.5;"/>
+            <div class="merch-text">youth apparel</div>
+        </div>
+
+        <div class="merch-squares square">
+            <img src="tee.png" style="width: 200px;height: 200px;opacity: 0.5; "/>
+            <div class="merch-text">adult apparel</div>
+        </div>
+
+        <div class="merch-squares square">
+            <img src="coffebagbrown.png" style="object-fit: cover; width: 200px;height: 200px; opacity: 0.5;"/>
+            <div class="merch-text">coffee</div>
+        </div>
+
+        <div class="merch-squares square">
+            <img src="als%20logo.jpg" style="object-fit: cover; width: 200px;height: 200px; opacity: 0.5;"/>
+            <div class="merch-text">temp tattoos</div>
+        </div>
+
+        <div class="merch-squares square">
+            <img src="MUG.png" style="object-fit: cover; width: 200px;height: 200px;opacity: 0.5; "/>
+            <div class="merch-text">mugs</div>
+        </div>
+
+        <div class="merch-squares square">
+            <img src="blue%20cap-709bbu.jpg" style="width: 200px;height: 200px; opacity: 0.5;"/>
+            <div class="merch-text">accessories</div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<div id="section_06"><p>social</p>
+</div>
+
+
+<footer></footer>
+
+<script>
+    $(document).ready(function () {
+// Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+// Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+// Prevent default anchor click behavior
+                event.preventDefault();
+
+// Store hash
+                var hash = this.hash;
+
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+// Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
+
+</div><!-- end of wrapper -->
+
+
+</div>
+
+</html>
